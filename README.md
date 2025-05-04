@@ -47,14 +47,18 @@ PCA-MNIST/
 
 ## Key Results
 
-- **Explained Variance Curves**: Most variance captured within first 50–100 components.
-- **Reconstruction Quality**: Acceptable reconstruction achieved with 50-100 components.
-- **Simple Generation**: New "zero" digits sampled from PCA latent space.
+- **Variance Distribution**: The very first principal components are the most important for preserving the data variance, with the first ~120 components capturing approximatel 75% of the total variance.
+- **Reconstruction Quality**: Recognizable digits emerge with as few as 38 components (~50% of total variance).
+- **Reconstruction Error**: MSE decreases sharply with first principal components, and then gradually converges toward zero as dimensionality increases.
+- **Global Generation**: Sampling from global PCA latent space trained on all digits produces blurry, indistinct results.
+- **Class-Specific Generation**: PCA applied to a single digit class (e.g., digit 2) produces sharper and more realistic generations.
+- **Noise Tradeoff**: Using too many components reintroduces noise and artifacts into generated samples.
 
 ## Future Work
 
-- Develop a modular `MyPCA` class
-- Explore deeper probabilistic models (e.g., Probabilistic PCA, VAE)
+- Extend to **probabilistic PCA**, **VAEs**, or **GANs** for better generative modeling
+- Use PCA latent space for dimensionality reduction in **classification** models
+- Apply PCA for **noise filtering** applications
 
 ## Setup
 
@@ -69,10 +73,10 @@ pip install -r requirements.txt
 All experiments and visualizations are contained in the notebook:
 
 ```bash
-notebooks/01-pca-mnist.ipynb
+PCA_on_MNIST_Digits.ipynb
 ```
 Then you can run and explore the notebook step-by-step.
-
+> 💡 Tip: This notebook runs out-of-the-box on **Google Colab** — no installation required.
 
 ---
 
