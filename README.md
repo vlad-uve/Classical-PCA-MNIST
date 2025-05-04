@@ -1,15 +1,28 @@
 # PCA on MNIST Digits
 
-This project explores Principal Component Analysis (PCA) applied to the MNIST digit dataset, focusing on dimensionality reduction, reconstruction, and simple generative modeling.
+This project demonstrates how **Principal Component Analysis (PCA)** can be applied to the MNIST handwritten digit dataset to to see in detail how PCA works and why it's useful for understanding the structure of image data.
+
+We explore PCA for:
+- **Dimensionality reduction**
+- **Image reconstruction**
+- **Synthetic digit generation**
+
+All computations are implemented from scratch using **NumPy**, enabling a transparent, step-by-step understanding of PCA’s mathematical foundations.
+
+---
 
 ## Project Overview
 
+- Loading and standardizing the full MNIST dataset
 - Visualization of original MNIST digits
-- Creation of an Orthonormal Basis (ONB) using both SVD and eigendecomposition
-- Analysis of total variance and explained variance
-- Reconstruction of digits with varying numbers of PCA components
-- Analysis of reconstruction error vs number of components
-- Simple random generation of new digits using PCA space
+- **Computation of PCA** using **Singular Value Decomposition (SVD)** to obtain an **orthonormal basis (ONB)** of principal components and the **variance explained** by each component
+- **Analysis of individual variance** captured by each individual principal component
+- **Analysis of cumulative variance** captured by subspaces spanned by the first M principal components
+- **Projection of digits** onto subspaces spanned by principal components
+- **Reconstuction of digits** from latent spaces with varying numbers of PCA components
+- **Evaluation of reconstruction error** vs number of components using  Mean Squared Error (MSE) 
+- **Generation of new digits** using both global PCA (across all digits) and class-specific PCA
+- Compare generation quality for different numbesr of PCA components forming the latent space
 
 ## Project Structure
 <pre>
@@ -19,7 +32,7 @@ PCA-MNIST/
 ├── 📄 .gitignore            — Files/folders ignored by Git
 │
 ├── 📁 notebooks/            — Exploratory Jupyter Notebooks
-│   └── 01-pca-mnist.ipynb
+│   └── PCA_on_MNIST_Digits.ipynb
 │
 ├── 📁 src/                  — Source code (optional utilities, future modules)
 │   └── pca_utils.py
@@ -31,7 +44,6 @@ PCA-MNIST/
 └── 📁 data/                 — Dataset (empty or managed automatically)
     └── README.md
 </pre>
-
 
 ## Key Results
 
