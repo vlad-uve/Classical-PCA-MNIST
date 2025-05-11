@@ -1,6 +1,9 @@
-# PCA on MNIST Digits
+# Classical PCA on MNIST Digits
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/PCA-MNIST/blob/main/PCA_on_MNIST_Digits.ipynb)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-This project demonstrates how **Principal Component Analysis (PCA)** can be applied to the MNIST handwritten digit dataset to to see in detail how PCA works and why it's useful for understanding the structure of image data.
+This project demonstrates how classical **Principal Component Analysis (PCA)** can be applied to the MNIST handwritten digit dataset to to see in detail how PCA works and why it's useful for understanding the structure of image data.
 
 We explore PCA for:
 - **Dimensionality reduction**
@@ -11,8 +14,20 @@ All computations are implemented from scratch using **NumPy**, enabling a transp
 
 ---
 
-## Project Overview
+# Example Outputs
+## Example Digits
+![Sample Digits](images/mnist_sample_digits.png)
 
+## PCA Variance Explained
+![PCA Variance](charts/pca_variance_curve.png)
+
+## PCA 2D Projection
+![2D Projection](images/pca_2d_projection.png)
+
+## Example Reconstructions
+![Reconstructed Digits](images/reconstruction_examples.png)
+
+## Project Overview
 - Loading and standardizing the full MNIST dataset
 - Visualization of original MNIST digits
 - **Computation of PCA** using **Singular Value Decomposition (SVD)** to obtain an **orthonormal basis (ONB)** of principal components and the **variance explained** by each component
@@ -24,29 +39,7 @@ All computations are implemented from scratch using **NumPy**, enabling a transp
 - **Generation of new digits** using both global PCA (across all digits) and class-specific PCA
 - Compare generation quality for different numbesr of PCA components forming the latent space
 
-## Project Structure
-<pre>
-PCA-MNIST/
-├── 📄 README.md            — Project overview
-├── 📄 requirements.txt     — List of Python libraries
-├── 📄 .gitignore            — Files/folders ignored by Git
-│
-├── 📁 notebooks/            — Exploratory Jupyter Notebooks
-│   └── PCA_on_MNIST_Digits.ipynb
-│
-├── 📁 src/                  — Source code (optional utilities, future modules)
-│   └── pca_utils.py
-│
-├── 📁 outputs/              — Saved figures and generated samples
-│   ├── 📁 figures/
-│   └── 📁 samples/
-│
-└── 📁 data/                 — Dataset (empty or managed automatically)
-    └── README.md
-</pre>
-
 ## Key Results
-
 - **Variance Distribution**: The very first principal components are the most important for preserving the data variance, with the first ~120 components capturing approximatel 75% of the total variance.
 - **Reconstruction Quality**: Recognizable digits emerge with as few as 38 components (~50% of total variance).
 - **Reconstruction Error**: MSE decreases sharply with first principal components, and then gradually converges toward zero as dimensionality increases.
@@ -55,31 +48,41 @@ PCA-MNIST/
 - **Noise Tradeoff**: Using too many components reintroduces noise and artifacts into generated samples.
 
 ## Future Work
-
 - Extend to **probabilistic PCA**, **VAEs**, or **GANs** for better generative modeling
 - Use PCA latent space for dimensionality reduction in **classification** models
 - Apply PCA for **noise filtering** applications
 
+---
+
 ## Setup
+You can view the full list of dependencies in the [requirements.txt](./requirements.txt) file.
 
-To install all required Python libraries, run:
+To install:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ## How to Run
-
-All experiments and visualizations are contained in the notebook:
-
-```bash
-PCA_on_MNIST_Digits.ipynb
-```
-Then you can run and explore the notebook step-by-step.
+All experiments and visualizations are contained in the [📓 Classical_PCA_on_MNIST_Digits.ipynb](./PCA_on_MNIST_Digits.ipynb) notebook. Then you can run and explore the notebook step-by-step in any Jupyter environment.
 > 💡 Tip: This notebook runs out-of-the-box on **Google Colab** — no installation required.
+
+## Project Structure
+<pre>
+Classical PCA-MNIST/
+├── 📄 README.md            — Project overview
+├── 📄 requirements.txt     — Required Python packages
+│
+├── 📁 notebooks/           — Main analysis notebook
+│   └── Classical_PCA_on_MNIST_Digits.ipynb
+│
+├── 📁 outputs/             — All created charts and images
+│   ├── 📁 charts/
+│   └── 📁 images/
+</pre>
 
 ---
 
 ## License
 
-This project is open-source and available for educational and personal use.
+This project is licensed under the terms of the [MIT License](./LICENSE).
