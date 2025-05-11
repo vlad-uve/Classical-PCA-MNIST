@@ -70,6 +70,7 @@ All experiments and visualizations are contained in the [📓 Classical_PCA_on_M
 ## Project Structure
 <pre>
 Classical PCA-MNIST/
+├── 📄 LICENSE.txt          — MIT license
 ├── 📄 README.md            — Project overview
 ├── 📄 requirements.txt     — Required Python packages
 │
@@ -85,4 +86,4 @@ Classical PCA-MNIST/
 
 ## License
 
-This project is licensed under the terms of the [MIT License](./LICENSE).
+This project is licensed under the terms of the [MIT License](./LICENSE.txt).
