@@ -14,27 +14,27 @@ All computations are implemented from scratch using **NumPy**, enabling a transp
 
 ---
 
-# Example Outputs
-## Example of Original Digits
+## Example Outputs
+### Example of Original Digits
 ![Sample Digits](outputs/images/original_digits_sample.png)
 
-## Cumulative Explained Variance
+### Cumulative Explained Variance
 ![PCA Variance](outputs/charts/cumulative_explained_variance.png)
 
-## Example of Projection onto 2 PC Subspace
+### Example of Projection onto 2 PC Subspace
 ![2D Projection](outputs/charts/projection_on_2_pc.png)
 
-## Example of Reconstructed Digits
+### Example of Reconstructed Digits
 ![Reconstructed Digits](outputs/images/reconstruction_from_8_pc.png)
 ![Reconstructed Digits](outputs/images/reconstruction_from_38_pc.png)
 ![Reconstructed Digits](outputs/images/reconstruction_from_120_pc.png)
 
-## Example of Generated Images of Digits
+### Example of Generated Images of Digits
 ![Reconstructed Digits](outputs/images/digit2_generated_from_2_pc.png)
 ![Reconstructed Digits](outputs/images/digit2_generated_from_4_pc.png)
 ![Reconstructed Digits](outputs/images/digit2_generated_from_8_pc.png)
 
-## Project Overview
+### Project Overview
 - Loading and standardizing the full MNIST dataset
 - Visualization of original MNIST digits
 - **Computation of PCA** using **Singular Value Decomposition (SVD)** to obtain an **orthonormal basis (ONB)** of principal components and the **variance explained** by each component
@@ -61,6 +61,10 @@ All computations are implemented from scratch using **NumPy**, enabling a transp
 
 ---
 
+## How to Run
+All experiments and visualizations are contained in the [📓 Classical_PCA_on_MNIST_Digits.ipynb](notebooks/Classical_PCA_on_MNIST_Digits.ipynb) notebook. Then you can run and explore the notebook step-by-step in any Jupyter environment.
+> 💡 Tip: This notebook runs out-of-the-box on **Google Colab** — no installation required.
+
 ## Setup
 You can view the full list of dependencies in the [requirements.txt](./requirements.txt) file.
 
@@ -69,10 +73,6 @@ To install:
 ```
 pip install -r requirements.txt
 ```
-
-## How to Run
-All experiments and visualizations are contained in the [📓 Classical_PCA_on_MNIST_Digits.ipynb](./PCA_on_MNIST_Digits.ipynb) notebook. Then you can run and explore the notebook step-by-step in any Jupyter environment.
-> 💡 Tip: This notebook runs out-of-the-box on **Google Colab** — no installation required.
 
 ## Project Structure
 <pre>
