@@ -15,17 +15,24 @@ All computations are implemented from scratch using **NumPy**, enabling a transp
 ---
 
 # Example Outputs
-## Example Digits
-![Sample Digits](images/mnist_sample_digits.png)
+## Example of Original Digits
+![Sample Digits](./outputs/images/original_digits_sample.png)
 
-## PCA Variance Explained
-![PCA Variance](charts/pca_variance_curve.png)
+## Cumulative Explained Variance
+![PCA Variance](./output/charts/cumulative_explained_variance.png)
 
-## PCA 2D Projection
-![2D Projection](images/pca_2d_projection.png)
+## Example of Projection onto 2 PC Subspace
+![2D Projection](.output/images/projection_on_2_pc.png)
 
-## Example Reconstructions
-![Reconstructed Digits](images/reconstruction_examples.png)
+## Example of Reconstructed Digits
+![Reconstructed Digits](.output/images/reconstruction_from_8_pc.png)
+![Reconstructed Digits](.output/images/reconstruction_from_38_pc.png)
+![Reconstructed Digits](.output/images/reconstruction_from_120_pc.png)
+
+## Example of Generated Images of Digits
+![Reconstructed Digits](.output/images/digit2_generated_from_2_pc.png)
+![Reconstructed Digits](.output/images/digit2_generated_from_4_pc.png)
+![Reconstructed Digits](.output/images/digit2_generated_from_8_pc.png)
 
 ## Project Overview
 - Loading and standardizing the full MNIST dataset
