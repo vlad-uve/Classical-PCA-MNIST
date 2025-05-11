@@ -1,0 +1,7 @@
+# Core dependencies
+numpy>=1.21
+matplotlib>=3.4
+tensorflow>=2.8
+
+# Optional: only needed if running locally (not on Google Colab)
+jupyter notebook
