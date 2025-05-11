@@ -19,20 +19,20 @@ All computations are implemented from scratch using **NumPy**, enabling a transp
 ![Sample Digits](./outputs/images/original_digits_sample.png)
 
 ## Cumulative Explained Variance
-![PCA Variance](./output/charts/cumulative_explained_variance.png)
+![PCA Variance](./outputs/charts/cumulative_explained_variance.png)
 
 ## Example of Projection onto 2 PC Subspace
-![2D Projection](.output/images/projection_on_2_pc.png)
+![2D Projection](.outputs/charts/projection_on_2_pc.png)
 
 ## Example of Reconstructed Digits
-![Reconstructed Digits](.output/images/reconstruction_from_8_pc.png)
-![Reconstructed Digits](.output/images/reconstruction_from_38_pc.png)
-![Reconstructed Digits](.output/images/reconstruction_from_120_pc.png)
+![Reconstructed Digits](.outputs/images/reconstruction_from_8_pc.png)
+![Reconstructed Digits](.outputs/images/reconstruction_from_38_pc.png)
+![Reconstructed Digits](.outputs/images/reconstruction_from_120_pc.png)
 
 ## Example of Generated Images of Digits
-![Reconstructed Digits](.output/images/digit2_generated_from_2_pc.png)
-![Reconstructed Digits](.output/images/digit2_generated_from_4_pc.png)
-![Reconstructed Digits](.output/images/digit2_generated_from_8_pc.png)
+![Reconstructed Digits](.outputs/images/digit2_generated_from_2_pc.png)
+![Reconstructed Digits](.outputs/images/digit2_generated_from_4_pc.png)
+![Reconstructed Digits](.outputs/images/digit2_generated_from_8_pc.png)
 
 ## Project Overview
 - Loading and standardizing the full MNIST dataset
